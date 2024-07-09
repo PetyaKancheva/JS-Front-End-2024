@@ -2,7 +2,7 @@ function solve(startNum,endNum){
     let result ="";
     let sum=0;
     for( let i=startNum; i<= endNum; i++){
-        result = `${result} ${i}`
+        result += `${i} `;
         sum +=i;
     }
     console.log(result);
