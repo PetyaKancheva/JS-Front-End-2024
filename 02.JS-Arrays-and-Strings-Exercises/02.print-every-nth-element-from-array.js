@@ -1,17 +1,19 @@
-function  solve(inputArray,n){
+function solve(inputArray, step) {
     let outputArray = [];
-    for ( let i=0 ; i<=inputArray.length-1 ;i+=n){
-        outputArray.push(inputArray[i]);
-    }
-     return outputArray;
+    inputArray.forEach((element, i) => {
+        if (i % step == 0) {
+            outputArray.push(element);
+        }
+    });
+    return outputArray;
 }
 console.log(
-solve(['1', 
-    '2',
-    '3', 
-    '4', 
-    '5'], 
-    6
-    ));
+    solve(['5', 
+        '20', 
+        '31', 
+        '4', 
+        '20'], 
+        2
+));
 
 

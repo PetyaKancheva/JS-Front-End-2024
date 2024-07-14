@@ -1,8 +1,7 @@
 function solve(inputArray) {
-    let sortedArray = inputArray.sort();
-    for (let i = 0; i <= inputArray.length - 1; i++) {
-        console.log(`${i + 1}.${sortedArray[i]}`);
-    }
+    inputArray.sort((a, b) => a.localeCompare(b)).map((name,i)=>{
+        console.log(`${i + 1}.${name}`);
+    });
 }
 
-solve(["John"])
+solve(["John", "Bob", "Christina", "Ema"])

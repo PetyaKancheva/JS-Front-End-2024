@@ -1,11 +1,8 @@
 function solve(inputArray, countRotations){
         const actualRotations = countRotations% inputArray.length;
-            let elementToMove;
-        for(let i=1; i<=actualRotations;i++){
-            elementToMove =inputArray.shift();
-            inputArray.push(elementToMove);
-        }
-    console.log(inputArray.join(' '));
+        const leftSide=inputArray.splice(0,actualRotations);
+        
+    console.log(inputArray.concat(leftSide).join(' '));
 
 }
 
