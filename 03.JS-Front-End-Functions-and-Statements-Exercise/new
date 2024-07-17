@@ -1,0 +1,7 @@
+
+function solve(arr){
+    const result = arr.reduce((a,b) =>( a + b));
+    console.log(result);
+}
+
+    solve([1,2,3])

@@ -1,16 +1,3 @@
-function solve(first,second, third){
-    let smallestNum = first;
-        if(first>second){
-            smallestNum=second;
-        }
-        if (smallestNum>third){
-            smallestNum=third;
-        }
-        console.log(smallestNum);
-      
-}
+const minNumber = (a,b,c)=> console.log(Math.min(a,b,c));
 
-solve(2,
-    2,
-    2
-    )
+minNumber(2,3,4)

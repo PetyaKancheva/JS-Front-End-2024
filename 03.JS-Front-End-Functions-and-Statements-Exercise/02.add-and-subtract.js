@@ -1,9 +1,8 @@
 function solve(first, second, third) {
-    function sum(num1, num2) { return num1 + num2; }
+    const sumTwoNumbers = (a, b) => (a+b );
+    const subtractTwoNumbers =(a, b) => (a-b );
 
-    function subtract(num1, num2) {return num1 - num2; }
-
-    console.log(subtract(sum(first,second),third));
+    console.log(subtractTwoNumbers(sumTwoNumbers(first,second),third));
 }
 
 solve(1,
