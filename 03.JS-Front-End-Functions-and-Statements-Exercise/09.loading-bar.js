@@ -7,10 +7,8 @@ function solve(number){
         console.log('100% Complete!');
         console.log('[%%%%%%%%%%]')} ;
         function printLoading (num){
-            const arrayStart=new Array(count).fill('%');
-            const arrayEnd = new Array(10-count).fill('.');
-            const resultArray= arrayStart.concat(arrayEnd);
-            console.log(`${number}% [${resultArray.join('')}]`);
+            let restSymbols=10-count;
+            console.log(`${number}% [${'%'.repeat(count)}${'.'.repeat(restSymbols)}]`);
             console.log('Still loading...');
         }
 }
